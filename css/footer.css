@@ -1,0 +1,30 @@
+footer {
+    border-top: 2px solid black;
+    background-color: rgb(38, 41, 35);
+    padding-bottom: 5px;
+}
+
+footer h2 {
+    color: rgb(146, 146, 146);
+    font-family: 'Poiret One', cursive;
+    font-size: 18px; 
+    text-align: center;
+    padding: 3px;
+    
+}
+
+/*------------------- PORTRAIT-------------------------------*/
+
+@media (min-width: 768px) and (orientation:Portrait) {
+    footer h2 {
+        font-size: 26px;
+    }
+}
+
+/*------------------- LANDSCAPE-------------------------------*/
+
+@media (min-width: 1024px) and (orientation:LANDSCAPE) {
+    footer h2 {
+        font-size: 26px;
+    }
+}

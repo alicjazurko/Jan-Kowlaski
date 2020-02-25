@@ -1,0 +1,158 @@
+.tech div ol {
+    margin: 30px;
+    text-align: center;
+}
+
+.tech div ol li {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    padding: 15px 20px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 125px;
+    
+}
+
+.tech div ol li i {
+    display: flex;
+    margin: 10px auto;
+    margin-left: 20%;
+    font-size: 40px;
+}
+
+.tech div ol li:nth-child(1):hover i {
+    animation: colorPython 0.7s infinite;
+}
+
+.tech div ol li:nth-child(2):hover i {
+    color: red;
+}
+
+.tech div ol li:nth-child(3):hover i {
+    color: rgb(228, 59, 17);
+}
+
+.tech div ol li:nth-child(4):hover i {
+    color: rgb(40, 87, 240);
+}
+
+.tech div ol li:nth-child(5):hover i {
+    color: rgb(0, 183, 255);
+}
+
+.tech div ol li:nth-child(6):hover i {
+    color: rgb(255, 187, 0);
+}
+
+.tech div ol li:nth-child(7):hover i {
+    color: rgb(255, 81, 0);
+}
+
+.tech div ol li:nth-child(8):hover i {
+    color: rgb(0, 89, 255);
+}
+
+
+@keyframes colorPython {
+    0% {
+        color: rgb(255, 255, 111);
+    }
+    50% {
+        color: rgb(77, 77, 209);
+    }
+    100% {
+        color: rgb(255, 255, 111);
+    }
+}
+
+
+/*-------------------------------PORTRAIT-----------------------------*/
+
+@media (min-width:375px) and (orientation:portrait) {
+    .tech div ol {
+        margin: 30px 50px;
+    }
+}
+@media (min-width:411px) and (orientation:portrait) {
+    .tech div ol {
+        margin: 30px 65px;
+    }
+}
+
+@media (min-width:768px) and (orientation:portrait) {
+    .tech div ol {
+        margin: 30px 120px;
+    }
+
+    .tech div ol li i {
+        font-size: 55px;
+        margin-left: 15%;
+    }
+}
+
+@media (min-width:1024px) and (orientation:portrait) {
+    .tech div ol {
+        margin: 30px 160px;
+    }
+
+    .tech div ol li {
+        margin: 20px;
+    }
+
+    .tech div ol li i {
+        font-size: 60px;
+        margin-left: 15%;
+    }
+}
+
+/*-------------------------------landscape-----------------------------*/
+
+@media (min-width:568px) and (orientation:landscape) {
+    .tech div ol {
+        margin: 30px 20px;
+    }
+    .tech div ol li i {
+        margin-left: 35%;
+    }
+}
+
+@media (min-width:640px) and (orientation:landscape) {
+    .tech div ol {
+        margin: 30px 50px;
+    }
+}
+@media (min-width:731px) and (orientation:landscape) {
+    .tech div ol {
+        margin: 30px 90px;
+    }
+}
+
+@media (min-width:812px) and (orientation:landscape) {
+    .tech div ol {
+        margin: 30px 140px;
+    }
+}
+
+@media (min-width: 1024px) and (orientation:landscape) {
+    .tech div ol li i{
+    font-size: 58px;
+    margin-left: 15%;
+}
+   
+   
+    
+}
+
+@media (min-width: 1366px) and (orientation:landscape) {
+   .tech div ol li {
+        
+        padding: 15px 70px;
+    }
+
+.tech div ol {
+        margin: 30px 0px;
+        
+    }
+}

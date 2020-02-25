@@ -1,0 +1,178 @@
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+h2 {
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    margin: 14px;
+    font-size: 34px;
+}
+p {
+    font-family: 'Noto Sans', sans-serif;
+    padding: 5px 15px;
+}
+h3{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+body {
+    background-color: rgb(223, 223, 223);
+    width: 100vw;
+}
+.about div div:first-child{
+    display: inline-block;
+}
+
+.about img {
+    width: 55vw;
+    text-align: center;
+    margin: 0 20vw;
+    border: 5px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(134, 134, 134);
+    box-shadow: 0 0 10px black;
+}
+
+/*------------------- PORTRAIT-------------------------------*/
+
+@media (min-width:375px) and (orientation:Portrait) {
+    p, .job ul {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 768px) and (orientation:Portrait) {
+    p, .job ul {
+        font-size: 20px;
+        margin: 10px 40px;
+    }
+
+    h3 {
+        font-size: 34px;
+        padding: 10px;
+    }
+
+    h2{
+        font-size: 50px;
+    }
+
+    .about img {
+        width: 200px;
+        margin: 20px 40px;
+        
+    }
+
+    .about div:first-child {
+        float: left;
+    }
+}
+
+@media (min-width: 1024px) and (orientation:Portrait) {
+  
+    p, .job ul {
+        font-size: 24px;
+        margin: 10px 50px;
+    }
+
+    h3 {
+        font-size: 38px;
+        padding: 14px;
+    }
+
+    h2{
+        font-size: 58px;
+        padding: 15px;
+    }
+
+    .about img {
+        width: 280px;
+        margin: 20px 40px;
+        padding: 18px;
+        border: 8px solid black;
+    }
+
+    
+}
+
+/*------------------- LANDSCAPE-------------------------------*/
+
+@media (min-width: 568px) and (orientation: landscape) {
+    .about img {
+        width: 200px;
+        margin: 20px 40px;
+        
+    }
+
+    .about div:first-child {
+        float: left;
+    }
+    p, .job ul {
+        font-size: 16px;
+        margin: 10px 40px;
+    }
+
+    h3 {
+        font-size: 26px;
+        padding: 5px;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+    p {
+        font-size: 18px;
+      
+    }
+
+    h3 {
+        font-size: 28px;
+        padding: 8px;
+    }
+
+    h2{
+        font-size: 48px;
+        padding: 10px;
+    }
+
+    .about img {
+        width: 250px;
+        padding: 16px;
+    }
+}
+
+@media (min-width: 1366px) and (orientation: landscape) {
+    p {
+        font-size: 20px;
+        margin: 10px 80px;
+    }
+
+    h3 {
+        font-size: 32px;
+        padding: 10px;
+    }
+
+    h2{
+        font-size: 54px;
+        padding: 10px;
+    }
+    .about img {
+        width: 300px;
+        padding: 20px;
+        margin: 70px;
+    }
+}

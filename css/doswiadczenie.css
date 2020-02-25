@@ -1,0 +1,57 @@
+.job {
+    font-family: 'Noto Sans', sans-serif;
+    padding: 10px 35px;
+}
+
+.job li {
+    padding-top: 5px;
+}
+
+.job h3 {
+    font-size: 24px;
+}
+
+.job h4 {
+    font-size: 18px;
+    font-weight: 200;
+    font-style: italic;
+    text-align: center;
+    margin: 5px auto 10px;
+}
+
+
+
+
+
+/*--------------------------------Landscape-----------------------------*/
+
+
+@media (min-width:1024px) and (orientation:landscape ) {
+    .job {
+    
+    float: left;
+    width: 32%;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.job ul {
+    margin:0;
+    padding: 0;
+    padding-left: 40px;
+}
+
+.job h4 {
+    font-size: 20px;
+}
+}
+
+
+@media (min-width:1366px) and (orientation:landscape ) {
+    .job {
+        width: 33%;
+    }
+    .zawod {
+        padding-left: 40px;
+    }
+}
+

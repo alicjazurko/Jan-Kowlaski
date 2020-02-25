@@ -1,0 +1,119 @@
+/* font-family: 'Poiret One', cursive;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Abril Fatface', cursive;
+font-family: 'Amatic SC', cursive;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 24px;
+    font-family: 'Poiret One', cursive;
+}
+
+header h1 {
+    color: rgb(214, 202, 206);
+    text-align: center;
+    font-weight: 700;
+}
+
+header h1:nth-child(1) {
+    font-size: 42px;
+    padding-top: 25vh;
+    
+}
+
+header h1:nth-child(2) {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+header div {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+header {
+    position: relative;
+    height: 60vh;
+    width: 100vw;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    
+}
+
+/*------------------- PORTRAIT-------------------------------*/
+
+@media (min-width:375px) and (orientation:Portrait) {
+    
+header h1:nth-child(1) {
+    font-size: 54px;
+}
+
+header h1:nth-child(2) {
+    font-size: 24px;
+}
+}
+
+@media (min-width:768px) and (orientation:portrait) {
+    header h1:nth-child(1) {
+        font-size: 78px;
+        padding-bottom: 20px;
+    }
+    
+    header h1:nth-child(2) {
+        font-size: 34px;
+    }
+}
+
+/*------------------- LANDSCAPE-------------------------------*/
+
+
+@media (min-width: 568px) and (orientation: landscape) {
+    header {
+        height: 80vh;
+
+    }
+
+    header h1:nth-child(1) {
+        font-size: 54px;
+        letter-spacing: 5px;
+    }
+    
+    header h1:nth-child(2) {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 731px) and (orientation: landscape) {
+
+    header h1:nth-child(1) {
+        font-size: 68px;
+    }
+    
+    header h1:nth-child(2) {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+    header {
+        height: 90vh;
+        background-attachment: fixed;
+    }
+    header h1:nth-child(1) {
+        padding-top: 40vh;
+        font-size: 90px;
+        letter-spacing: 10px;
+    }
+    
+    header h1:nth-child(2) {
+        font-size: 36px;
+    }
+}

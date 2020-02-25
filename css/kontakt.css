@@ -1,0 +1,141 @@
+.kontakt form {
+    width: 80vw;
+    margin: 20px auto;
+}
+
+.kontakt form input, textarea, button {
+    width: 75vw;
+    padding: 6px;
+    margin: 5px 0;
+    font-family: 'Noto Sans', sans-serif;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-bottom: 2px solid rgb(99, 99, 99);
+    
+}
+.kontakt textarea {
+    border: 2px solid rgb(99, 99, 99);
+    height: 150px;
+}
+
+.kontakt button {
+    border: 2px solid transparent;
+    font-family: 'Poiret One', cursive;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.kontakt form input:hover {
+    border-bottom: 2px solid rgb(24, 24, 24);
+    
+}
+
+.kontakt textarea:hover {
+    border: 2px solid rgb(24, 24, 24);
+}
+
+.kontakt button:hover {
+    animation: menuForm 1s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+   
+    
+}
+
+@keyframes menuForm {
+    0% {
+        color: black;
+        
+    }
+
+    30% {
+        border: 2px solid transparent;
+        border-bottom: 2px solid black;
+    }
+
+    50% {
+        border-top: 2px solid transparent;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+    }
+
+    60% {
+        border-top: 2px solid black;
+    }
+
+
+    100% {
+        color: black;
+        border: 2px solid black;
+       
+    }
+
+    
+}
+
+/*------------------- PORTRAIT-------------------------------*/
+
+@media (min-width:375px) and (orientation:Portrait) {
+    .kontakt form input, textarea {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) and (orientation:Portrait) {
+    .kontakt button {
+        font-size: 24px;
+        padding: 10px;
+    }
+    .kontakt form input, textarea, button {
+        margin: 15px auto;
+    }
+}
+
+@media (min-width: 1024px) and (orientation:Portrait) {
+    .kontakt button {
+        font-size: 30px;
+        padding: 14px;
+    }
+    .kontakt form input, textarea{
+        font-size: 24px;
+    }
+
+    .kontakt textarea {
+        height: 200px;;
+    }
+}
+
+/*------------------- LANDSCAPE-------------------------------*/
+
+@media (min-width: 1024px) and (orientation: landscape) {
+    .kontakt div {
+        float: left;
+        width: 40vw;
+        margin: 40px;
+    }
+
+    .kontakt form input, textarea, button {
+        width: 45vw;
+        
+    }
+}
+
+@media (min-width: 1366px) and (orientation: landscape) {
+    .kontakt div {
+        margin: 80px;
+        width: 35vw;
+        
+    }
+    .kontakt form input, textarea, button {
+       width: 40vw;
+    }
+
+    .kontakt form button {
+        font-size: 30px;
+    }
+
+    .kontakt input, textarea {
+        font-size: 22px;
+    }
+}
